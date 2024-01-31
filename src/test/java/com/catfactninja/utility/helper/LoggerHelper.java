@@ -10,7 +10,7 @@ public class LoggerHelper {
         if (root) {
             return Logger.getLogger(cls);
         }
-        PropertyConfigurator.configure("src/test/resources/properties/log4j.properties");
+        PropertyConfigurator.configure("src/test/resources/log4j.properties");
         root=true;
         return Logger.getLogger(cls);
     }
